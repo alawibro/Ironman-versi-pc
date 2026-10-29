@@ -1,7 +1,11 @@
 // Semua teks situs ada di sini. Ganti isi file ini untuk mengubah konten.
 
-export const BRAND = "M.Baihaqi.Alawi";
-export const TAGLINE = "11 TKJ 2.";
+export const BRAND = "Bro Alwi";
+export const TAGLINE = "Ganti dengan deskripsi singkat tentang brand Anda.";
+
+// Menambahkan basePath (mis. /Ironman-versi-pc) ke path aset, supaya video tetap ketemu di GitHub Pages.
+export const assetPath = (path: string) =>
+  `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${path}`;
 
 // Frame hero: public/frames/frame_0001.jpg ... frame_0169.jpg (diambil dari video)
 export const FRAME_COUNT = 169;
@@ -14,43 +18,43 @@ export const BEATS = [
     id: "b1",
     show: 0.1,
     hide: 0.3,
-    label: "01 — BUKAAN",
-    quote: "Saya Adalah Baihaqi Alawi.",
+    label: "01 — Pembuka",
+    quote: "Ganti dengan pesan pembuka brand Anda.",
   },
   {
     id: "b2",
     show: 0.35,
     hide: 0.55,
-    label: "02 — JEROANE",
-    quote: "Ini Project Gabut Karna Lagi Libur.",
+    label: "02 — Inti",
+    quote: "Ceritakan keunggulan utama di sini.",
   },
   {
     id: "b3",
     show: 0.6,
     hide: 0.8,
-    label: "03 — Tutupane",
-    quote: "Enjoy Dengan Framenya.",
+    label: "03 — Penutup",
+    quote: "Akhiri dengan ajakan yang jelas.",
   },
 ];
 
 export const FEATURES = [
-  { title: "Anime Apa Yang Kamu Suka?", body: "MAOU Gakuin." },
-  { title: "Badokan Apa Yang Kamu Suka", body: "Ayam." },
-  { title: "Kamu Akan Lawan?", body: "iya." },
-  { title: "lawan Siapa", body: "Lawan Pr." },
+  { title: "Fitur pertama", body: "Deskripsi placeholder untuk fitur pertama." },
+  { title: "Fitur kedua", body: "Deskripsi placeholder untuk fitur kedua." },
+  { title: "Fitur ketiga", body: "Deskripsi placeholder untuk fitur ketiga." },
+  { title: "Fitur keempat", body: "Deskripsi placeholder untuk fitur keempat." },
 ];
 
 export const FAQ = [
   {
-    q: "Apakah Kamu Pede Lawan PR?",
-    a: "SIAP,Menang Kalah Berani Maju.",
+    q: "Pertanyaan pertama?",
+    a: "Jawaban placeholder untuk pertanyaan pertama.",
   },
   {
-    q: "Kalau Kalah?",
-    a: "Ga bisa Ikut Ujian.",
+    q: "Pertanyaan kedua?",
+    a: "Jawaban placeholder untuk pertanyaan kedua.",
   },
   {
-    q: "Karena apa?",
-    a: "Pink Pink laknat (pink yang di maksud kartu siap ujian).",
+    q: "Pertanyaan ketiga?",
+    a: "Jawaban placeholder untuk pertanyaan ketiga.",
   },
 ];

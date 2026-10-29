@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { assetPath } from "@/lib/content";
 
 // Bagian sticky: video di belakang di-seek sesuai posisi scroll,
 // konten di depan ikut berputar 3D.
@@ -72,7 +73,7 @@ export function VideoScroll({
       <div className="sticky top-0 h-screen w-full overflow-hidden bg-black">
         <video
           ref={videoRef}
-          src={src}
+          src={assetPath(src)}
           muted
           playsInline
           preload="auto"

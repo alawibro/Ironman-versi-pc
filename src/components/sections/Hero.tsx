@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { BEATS, BRAND, TAGLINE } from "@/lib/content";
+import { BEATS, BRAND, TAGLINE, assetPath } from "@/lib/content";
 
 // Hero: video di-seek sesuai posisi scroll. Teks muncul bertahap.
 export function Hero() {
@@ -80,7 +80,7 @@ export function Hero() {
       <div className="sticky top-0 h-screen w-full overflow-hidden bg-black">
         <video
           ref={videoRef}
-          src="/videos/hero.mp4"
+          src={assetPath("/videos/hero.mp4")}
           muted
           playsInline
           preload="auto"
