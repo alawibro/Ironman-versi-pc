@@ -7,7 +7,7 @@ export function Features() {
     <VideoScroll id="fitur" src="/videos/s2.mp4">
       <p className="font-mono text-xs uppercase tracking-[0.25em] text-white/70">Fitur</p>
       <h2 className="mt-4 max-w-[18ch] text-4xl font-semibold leading-[1.05] tracking-tighter text-white md:text-6xl">
-        Ganti judul bagian ini.
+        Alawi Akan Lawan.
       </h2>
 
       <div className="mt-12 grid gap-5 md:grid-cols-2">
